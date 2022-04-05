@@ -4,9 +4,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <title>Component test</title>
 </head>
 <body>
+
+  <div class="app">
+
+  </div>
+
+  <script>
+    //voir nouveautés apportés par es6 à javascript
+    class App extends React.Component {
+      render() {
+        return(
+          //className et pas class car class est utilisé pour les classes en jsx
+          <div className="titre">
+            <h1>Mon Titre</h1>
+          </div>
+        )
+      }
+    }
+
+    ReactDOM.render(<App />, document.getElementById('app'))
+  </script>
   
 </body>
 </html>
